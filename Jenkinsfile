@@ -14,7 +14,7 @@ pipeline {
 
         stage('Verify') {
         steps {
-                        sh 'mvn -B -DskipTests verify'
+                        sh 'mvn -B  verify'
                     }
         }
     }
