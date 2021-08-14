@@ -25,6 +25,6 @@ environment {
 
     post {
      always {
-     cleanWS()
+     cleanWs()
      }}
 }
