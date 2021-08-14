@@ -22,4 +22,9 @@ environment {
                     }
         }
     }
+
+    post {
+     always {
+     cleanWS()
+     }}
 }
