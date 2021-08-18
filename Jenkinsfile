@@ -22,10 +22,5 @@ environment {
             }
         }
 
-        stage('Pack') {
-            steps {
-                sh 'docker build -t mvcstuff .'
-            }
-        }
     }
 }
