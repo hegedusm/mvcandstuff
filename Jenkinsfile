@@ -17,8 +17,8 @@ environment {
         }
 
         stage('Verify') {
-            steps {
-                 sh 'mvn -B  verify'
+            node {
+                 docker.build("my-image:${env.BUILD_ID}")
             }
         }
 
