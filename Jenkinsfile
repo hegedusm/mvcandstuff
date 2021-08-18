@@ -17,14 +17,14 @@ environment {
         }
 
         stage('Verify') {
-        steps {
-                        sh 'mvn -B  verify'
-                    }
+            steps {
+                 sh 'mvn -B  verify'
+            }
         }
     }
 
     post {
      always {
-     cleanWs()
+        cleanWs()
      }}
 }

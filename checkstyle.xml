@@ -8,7 +8,7 @@
     <module name="SuppressWarningsFilter"/>
 
     <module name="TreeWalker">
-        <property name="tabWidth" value="4"/>
+        <property name="tabWidth" value="2"/>
 
         <!-- Make the @SuppressWarnings annotations available to Checkstyle -->
         <module name="SuppressWarningsHolder"/>
@@ -127,7 +127,7 @@
         <!--Miscellaneous-->
         <module name="ArrayTypeStyle"/>
         <module name="Indentation">
-            <property name="caseIndent" value="4"/>
+            <property name="caseIndent" value="2"/>
         </module>
         <module name="TodoComment">
             <property name="severity" value="warning"/>

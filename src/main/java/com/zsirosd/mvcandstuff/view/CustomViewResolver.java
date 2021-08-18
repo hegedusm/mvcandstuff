@@ -7,15 +7,18 @@ import org.springframework.web.servlet.ViewResolver;
 
 import java.util.Locale;
 
+/**
+ * test
+ */
 public class CustomViewResolver implements ViewResolver, Ordered {
-  @Override
-  public View resolveViewName(String s, Locale locale) throws Exception {
+    @Override
+    public View resolveViewName(String s, Locale locale) throws Exception {
 
-    return s.equals("custom") ? new CustomView() : null;
-  }
+        return "custom".equals(s) ? new CustomView() : null;
+    }
 
-  @Override
-  public int getOrder() {
-    return 0;
-  }
+    @Override
+    public int getOrder() {
+        return 0;
+    }
 }
