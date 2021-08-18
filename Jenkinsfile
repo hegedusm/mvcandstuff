@@ -17,10 +17,16 @@ environment {
         }
 
         stage('Verify') {
-            node {
-                 docker.build("my-image:${env.BUILD_ID}")
+            steps {
+                 sh 'mvn -B  verify'
             }
         }
 
+        stage('Pack') {
+            agent any
+            steps {
+                sh 'docker build -t mvcstuff:${env.BUILD_ID} .'
+            }
+        }
     }
 }
