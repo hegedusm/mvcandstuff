@@ -21,5 +21,11 @@ environment {
                  sh 'mvn -B  verify'
             }
         }
+
+        stage('Pack') {
+            steps {
+                sh 'docker build -t mvcstuff .'
+            }
+        }
     }
 }
