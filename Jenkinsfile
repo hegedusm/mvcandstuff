@@ -22,9 +22,4 @@ environment {
             }
         }
     }
-
-    post {
-     always {
-        cleanWs()
-     }}
 }
