@@ -32,7 +32,7 @@ environment {
         stage('Pack') {
             agent any
             steps {
-                sh 'docker build -t mvcstuff:${env.BUILD_ID} .'
+                sh 'docker build -t mvcstuff:latest .'
             }
         }
     }
